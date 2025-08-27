@@ -1,0 +1,61 @@
+.statCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    min-height: 180px;
+}
+
+.statCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.statHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.statTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.statValue {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.progressBarContainer {
+    width: 100%;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+}
